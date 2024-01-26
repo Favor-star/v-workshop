@@ -23,6 +23,7 @@ body {
   width: 98vw;
   min-height: 97vh;
   height: 98vh;
+  padding: 0 4vw;
 }
 #bg-video {
   position: fixed;
@@ -130,7 +131,8 @@ nav a {
   font-size: 24px;
 }
 /*DOCUMENT 2: REGISTER.HTML*/
-#register__main {
+#register__main,
+#view__main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -220,9 +222,78 @@ nav a {
   text-decoration: none;
   font-weight: 600;
   text-align: center;
-  transition: all .2s;
+  transition: all 0.2s;
 }
-.google:hover{
+.google:hover {
   background-color: var(--ac-500);
   color: var(--white);
+}
+/* VIEW PAGE */
+.view {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+  width: 100%;
+  /* padding: 0 3vw; */
+}
+.view__head {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-end;
+  gap: 8px;
+}
+.view__head h3 {
+  color: var(--sec-900);
+  font-weight: 600;
+  font-size: 22px;
+}
+.view__head .line {
+  width: 150px;
+  height: 2px;
+}
+.main__view__section {
+  width: 100%;
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.screen {
+  width: 65%;
+  aspect-ratio: 16/9;
+  border: 1px solid var(--ac-500);
+  background-color: inherit;
+  border-radius: 10px;
+}
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.control__panel {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+}
+.control__panel .button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.button {
+  color: var(--sec-900);
+}
+.button i {
+  font-size: 30px;
+  color: var(--ac-500);
 }
