@@ -6,6 +6,7 @@
   --ac-500: #219ebc;
   --white: #ffffff;
   --sec-300: #e6e4de;
+  --sec-500: #dad7cd;
   --sec-900: #5c5a56;
 }
 * {
@@ -273,16 +274,20 @@ nav a {
 .panel {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2.5rem;
   padding: 10px;
   align-items: center;
   justify-content: center;
+  width: 32%;
 }
 .control__panel {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   gap: 30px;
-  width: 100%;
+  width: fit-content;
+  flex-wrap: wrap;
 }
 .control__panel .button {
   display: flex;
@@ -296,4 +301,89 @@ nav a {
 .button i {
   font-size: 30px;
   color: var(--ac-500);
+}
+.cp__title {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--sec-900);
+  text-align: right;
+}
+.title__line {
+  height: 2px;
+  width: 100px;
+  background-color: var(--ac-300);
+}
+.part {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  font-size: 16px;
+}
+.part i {
+  color: var(--ac-300);
+}
+.part .title__line {
+  width: 30px !important;
+}
+.view__more {
+  text-decoration: none;
+  color: var(--ac-500);
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+}
+.cp__contents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.view__parts__img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.slide {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.slide i{
+  font-size: 24px;
+  padding: 10px;
+  margin: 5px;
+  color: var(--sec-900);
+}
+.slide i:hover,.slide i:focus{
+  background-color: var(--sec-500);
+  border-radius: 3px;
+}
+.slide__contents {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.slide__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--sec-500);
+}
+.slide__card img {
+  width: 100px;
+  aspect-ratio: 1;
+  border: 1px solid var(--ac-500);
+  border-radius: 5px;
+  object-fit: cover;
 }
