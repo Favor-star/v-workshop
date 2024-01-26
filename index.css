@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap");
+
+:root {
+  margin: 0;
+  padding: 0;
+  line-height: 130%;
+  --ac-200: #99d2e0;
+  --ac-300: #6abed2;
+  --ac-500: #219ebc;
+  --white: #ffffff;
+  --sec-900: #5c5a56;
+}
+body {
+  font-family: "Syne", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 99vw;
+  min-height: 100vh;
+}
+main {
+  max-width: 1024px;
+  width: 100%;
+}
+#home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+header h1 {
+  color: var(--ac-500);
+}
+header nav {
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--sec-900);
+}
+.head__action {
+  padding: 6px 15px;
+  background: inherit;
+  border: 1px solid var(--ac-500);
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--ac-500);
+  font-size: 18px;
+}
+.welcome__section{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+
+}
+.welcome__text{
+  font-weight: 600;
+  color: var(--sec-900);
+  font-size: 45px;
+}
+.welcome__text span{
+  color: var(--ac-500);
+  font-weight: 700;
+}
