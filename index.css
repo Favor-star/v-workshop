@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap");
 
 :root {
-  
   --ac-200: #99d2e0;
   --ac-300: #6abed2;
   --ac-500: #219ebc;
   --white: #ffffff;
+  --sec-300: #e6e4de;
   --sec-900: #5c5a56;
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 0.2s all;
 }
 body {
   font-family: "Syne", sans-serif;
@@ -30,8 +31,8 @@ body {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  opacity: 0.3; 
-  z-index: -1; 
+  opacity: 0.3;
+  z-index: -1;
   pointer-events: none;
 }
 
@@ -89,44 +90,139 @@ nav a {
   font-size: 45px;
   text-align: center;
 }
-.welcome__action{
+.welcome__action {
   padding: 10px 15px;
   text-decoration: none;
   color: var(--white);
   background-color: var(--ac-500);
   border-radius: 5px;
   font-size: 20px;
-
-
 }
 .welcome__text span {
   color: var(--ac-500);
   font-weight: 800;
 }
-.follow__us{
-display: flex;
-flex-direction: column;
-gap:10px;
-width: 250px;
+.follow__us {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 250px;
 }
-.follow__text{
-display: flex;
-font-size: 18px;
-flex-direction: row;
-align-items: flex-end;
-gap: 8px;
+.follow__text {
+  display: flex;
+  font-size: 18px;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 8px;
 }
-.line{
-  flex:1;
+.line {
+  flex: 1;
   height: 2px;
   background-color: var(--ac-300);
 }
-.icons{
+.icons {
   display: flex;
   flex-direction: row;
   gap: 30px;
   align-self: flex-end;
 }
-.icons i{
+.icons i {
   font-size: 24px;
+}
+/*DOCUMENT 2: REGISTER.HTML*/
+#register__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register__div__wrapper {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.register__div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.reg__contents {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.input__div {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+.labels {
+  font-size: 16px;
+  color: var(--sec-900);
+}
+.inputs {
+  padding: 10px;
+  width: 100%;
+  background-color: var(--sec-300);
+  color: var(--sec-900);
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+}
+.inputs:focus {
+  outline: none;
+  border: none;
+}
+.inputs::placeholder {
+  font-family: "Sayne", sans-serif !important;
+}
+.reg__contents p {
+  color: var(--sec-900);
+  text-align: center;
+}
+.login__here {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--ac-500);
+}
+.btn {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: var(--white);
+  background-color: var(--ac-500);
+  width: fit-content;
+  align-self: center;
+  border-radius: 5px;
+  transition: 0.2s all;
+  font-size: 18px;
+}
+.btn:focus,
+.btn:hover {
+  box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--ac-500);
+}
+.google {
+  padding: 10px;
+  font-size: 18px;
+  color: var(--ac-500);
+  border: 1px solid var(--ac-500);
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  transition: all .2s;
+}
+.google:hover{
+  background-color: var(--ac-500);
+  color: var(--white);
 }
