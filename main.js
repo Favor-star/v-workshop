@@ -263,16 +263,16 @@ if ( WebGL.isWebGLAvailable() ) {
 
         // Get the name of the part to rotate from the GUI parameters
         const partName = guiParams.partToRotate; 
-        let part;
+        let part = scene.getObjectByName(partName);
         
-        // Find the object in the scene based on its name
-        if(object.name == '3DGeom-4'){
-            part = object;
-        } else {
-            console.error("You selected Wrong Part!");
-        }
+        // // Find the object in the scene based on its name
+        // if(object.name == '3DGeom-4'){
+        //     part = scene.getObjectByName(partName);
+        // } else {
+        //     console.error("You selected Wrong Part!");
+        // }
         
-        if (part ) {
+        if (part) {
             // Perform animation to rotate the spindle
             objectForContinuousAnimation = part;
             // Start a loop to continuously rotate the spindle
