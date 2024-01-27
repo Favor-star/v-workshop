@@ -301,6 +301,7 @@ nav a {
   border: 1px solid var(--ac-500);
   background-color: inherit;
   border-radius: 10px;
+  overflow: hidden;
 }
 .panel {
   display: flex;
