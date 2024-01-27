@@ -8,39 +8,54 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>v-workshop</title>
   </head>
   <body>
     <video id="bg-video" autoplay muted loop>
-  <source src="assets/bg-video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+      <source src="assets/bg-video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
     <main>
-        <section id="home">
-          <header>
-            <h1>v-workshop</h1>
-            <nav>
-              <a  href="">explore<i class="ri-arrow-drop-down-line"></i> </a>
-              <a href="">contact us</a>
-              <a href="">support us</a>
-            </nav>
-            <a class="head__action" href="">join us</a>
-          </header>
-          <div class="welcome__section">
-            <p class="welcome__text">
-              welcome to the <span>virtual workshop</span>
-            </p>
-            <a class="welcome__action" href="register.html">explore the hub</a>
-          </div>
-          <div class="follow__us">
-            <span class="follow__text"><span>follow us on</span> <span class="line"></span></span>
-            <div class="icons">
-              <i class="ri-instagram-fill"></i>
-              <i class="ri-facebook-circle-fill"></i>
-              <i class="ri-whatsapp-fill"></i>
+      <section id="home">
+        <header>
+          <h1>v-workshop</h1>
+          <nav>
+            <a id="explore__link" href="">explore<i class="ford__arrow ri-arrow-drop-down-line"></i> </a>
+            <a href="">contact us</a>
+            <a href="">support us</a>
+          </nav>
+          <a class="head__action" href="">join us</a>
+          <div class="ford">
+            <span class="cp__title explore__title"
+              >explore more <span class="title__line title__line__1"></span
+            ></span>
+            <div class="ford__cont">
+              <p>lathe machine</p>
+              <p>milling machine</p>
+              <p>drilling machine</p>
             </div>
           </div>
-        </section>
+        </header>
+        <div class="welcome__section">
+          <p class="welcome__text">
+            welcome to the <span>virtual workshop</span>
+          </p>
+          <a class="welcome__action" href="assets/register.html">explore the hub</a>
+        </div>
+        <div class="follow__us">
+          <span class="follow__text"
+            ><span>follow us on</span> <span class="line"></span
+          ></span>
+          <div class="icons">
+            <i class="ri-instagram-fill"></i>
+            <i class="ri-facebook-circle-fill"></i>
+            <i class="ri-whatsapp-fill"></i>
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
