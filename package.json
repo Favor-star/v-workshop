@@ -5,7 +5,7 @@
     "devDependencies": {
       "dat.gui": "^0.7.9",
       "three-stl-loader": "^1.0.6",
-      "vite": "^5.0.12"
+      "vite": "^5.4.19"
     }
   }
   
